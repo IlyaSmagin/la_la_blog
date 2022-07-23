@@ -1,30 +1,50 @@
-import Container from './container'
-import { EXAMPLE_PATH } from '../lib/constants'
+import Container from "./container";
 
 export default function Footer() {
   return (
-    <footer className="bg-accent-1 border-t border-accent-2">
+    <footer className="bg-accent-1 fixed bottom-0 w-full  dark:bg-black bg-white">
       <Container>
-        <div className="py-28 flex flex-col lg:flex-row items-center">
-          <h3 className="text-4xl lg:text-5xl font-bold tracking-tighter leading-tight text-center lg:text-left mb-10 lg:mb-0 lg:pr-4 lg:w-1/2">
-            Statically Generated with Next.js.
-          </h3>
-          <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
+        <div className="h-56 flex flex-col md:flex-row justify-center items-center font-mono ">
+          <div className="flex flex-col md:w-1/2">
+            <address className="not-italic tracking-tighter leading-tight text-center md:text-left lg:mb-0 lg:pr-4">
+              Написал{" "}
+              <a
+                className="hover:underline underline-offset-2"
+                rel="author"
+                href="https://github.com/IlyaSmagin"
+              >
+                @la_la_code
+              </a>
+            </address>
+            <div className="">
+              Это проект с{" "}
+              <a
+                className="underline"
+                href="https://github.com/IlyaSmagin/la_la_blog"
+              >
+                открытым исходным кодом
+              </a>
+            </div>
+          </div>
+          <div className="flex flex-col md:flex-row justify-end items-center md:pl-4 md:w-1/2 mt-8 md:mt-0">
             <a
-              href="https://nextjs.org/docs/basic-features/pages"
-              className="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0"
-            >
-              Read Documentation
-            </a>
-            <a
-              href={`https://github.com/vercel/next.js/tree/canary/examples/${EXAMPLE_PATH}`}
+              href="https://commonmark.org/help/"
               className="mx-3 font-bold hover:underline"
             >
-              View on GitHub
+              Формат
+            </a>
+            <a
+              href="https://github.com/IlyaSmagin/la_la_blog/new/master/_posts/"
+              className="mx-3 bg-black hover:bg-white hover:text-black border dark:hover:text-white dark:bg-white dark:text-black dark:hover:bg-black dark:border-white border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors"
+            >
+              Написать
             </a>
           </div>
         </div>
+        <aside className="font-mono fixed top-4 right-12">
+          Багов не существует, только счастливые опечатки...
+        </aside>
       </Container>
     </footer>
-  )
+  );
 }
