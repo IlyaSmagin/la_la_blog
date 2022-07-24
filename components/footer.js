@@ -16,7 +16,7 @@ export default function Footer() {
                 @la_la_code
               </a>
             </address>
-            <div className="">
+            <div className="text-center md:text-left">
               Это проект с{" "}
               <a
                 className="underline"
