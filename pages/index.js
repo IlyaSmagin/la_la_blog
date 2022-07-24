@@ -14,6 +14,8 @@ export default function Index({ allPosts }) {
       <Layout>
         <Head>
           <title>Ла_ла_блог</title>
+          <meta property="og:title" content="Главная | Ла_ла_блог" />
+          <meta property="og:url" content="https://la-la-blog.vercel.app" />
         </Head>
         <Container>
           <Intro />
@@ -32,13 +34,7 @@ export default function Index({ allPosts }) {
 }
 
 export async function getStaticProps() {
-  const allPosts = getAllPosts([
-    "title",
-    "date",
-    "slug",
-    "author",
-    "excerpt",
-  ]);
+  const allPosts = getAllPosts(["title", "date", "slug", "author", "excerpt"]);
 
   return {
     props: { allPosts },

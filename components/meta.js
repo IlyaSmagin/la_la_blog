@@ -1,7 +1,4 @@
-import Head from 'next/head'
-import { CMS_NAME } from '../lib/constants'
-
-
+import Head from "next/head";
 
 export default function Meta() {
   return (
@@ -33,12 +30,16 @@ export default function Meta() {
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
       <meta name="theme-color" content="#000000" />
-      <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      <meta
-        name="description"
-        content={`${CMS_NAME} блог. Мысли вслух`}
-      />
-      <meta property="og:image" content="./public/preview/snapsq.png" />
+      <meta name="description" content="Ла_ла_блог блог. Мысли вслух." />
+      <meta property="og:image" content="/assets/ogImg.png" />
+      <meta property="og:image:secure_url" content="/assets/ogImg.png" />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:site_name" content="la-la-blog" />
+      <meta property="og:type" content="website" />
+      <meta property="og:description" content="Ла_ла_блог. Мысли вслух." />
+      <meta property="og:locale" content="ru_RU" />
     </Head>
-  )
+  );
 }

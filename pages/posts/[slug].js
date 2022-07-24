@@ -26,7 +26,14 @@ export default function Post({ post }) {
             <article className="mb-32 grid grid-cols-1 sm:grid-cols-2">
               <Head>
                 <title>{post.title} | Ла_ла_блог</title>
-                <meta property="og:image" content={post.ogImage.url} />
+                <meta
+                  property="og:title"
+                  content={`${post.title} | Ла_ла_блог`}
+                />
+                <meta
+                  property="og:url"
+                  content={`https://la-la-blog.vercel.app/posts/${post.slug}`}
+                />
               </Head>
               <PostHeader
                 title={post.title}
