@@ -7,7 +7,7 @@ export default class MyDocument extends Document {
         <Head>
           <script src="/darkTheme.js"></script>
         </Head>
-        <body>
+        <body className="bg-white dark:bg-black">
           <Main />
           <NextScript />
         </body>

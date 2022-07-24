@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-    background-color: black;
-}
 .dotted {
     background: radial-gradient(currentColor 1px, transparent 1px);
     color: yellow;
