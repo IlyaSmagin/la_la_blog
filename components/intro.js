@@ -1,9 +1,5 @@
 import { useEffect, useState } from "react";
-/*
-background: radial-gradient(currentColor 1px, transparent 1px);
-color: white;
-background-size: calc(10 * 1px) calc(10 * 1px);
- */
+
 function getStorageValue(key, defaultValue) {
   if (typeof window !== "undefined") {
     const saved = localStorage.getItem(key);
@@ -34,7 +30,7 @@ export const useLocalStorage = (key, defaultValue) => {
 };
 
 export default function Intro() {
-
+  
   const [darkTheme, setTheme] = useLocalStorage("darkTheme", true);
 
   return (
@@ -49,7 +45,7 @@ export default function Intro() {
             onClick={() => setTheme(!darkTheme)}
             className="h-fit underline font-mono hover:decoration-blue-600 dark:hover:decoration-accent-dark duration-200 transition-colors"
           >
-            {darkTheme ? "Светлая " : "Темная "} тема
+            {darkTheme ? "Темная " : "Светлая "} тема
           </button>
         </h4>
       </section>

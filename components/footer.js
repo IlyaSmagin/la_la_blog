@@ -34,7 +34,7 @@ export default function Footer() {
               Формат
             </a>
             <a
-              href="https://github.com/IlyaSmagin/la_la_blog/new/master/_posts/"
+              href="https://github.com/IlyaSmagin/la_la_blog/new/main/_posts"
               className="mx-3 bg-black hover:bg-white hover:text-black border dark:hover:text-white dark:bg-white dark:text-black dark:hover:bg-black dark:border-white border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors"
             >
               Написать

@@ -1,7 +1,7 @@
 if (typeof window !== "undefined") {
   if (
-    (localStorage.theme === "dark") ||
-    (!("theme" in localStorage) &&
+    (localStorage.darkTheme === "true") ||
+    (!("darkTheme" in localStorage) &&
       window.matchMedia("(prefers-color-scheme: dark)").matches)
   ) {
     document.documentElement.classList.add("dark");
