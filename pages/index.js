@@ -7,7 +7,7 @@ import { getAllPosts } from "../lib/api";
 import Head from "next/head";
 
 export default function Index({ allPosts }) {
-  const heroPost = allPosts[0];
+  const heroPost = allPosts[0]; //TODO set about.md to heroPost
   const morePosts = allPosts.slice(1);
   return (
     <>

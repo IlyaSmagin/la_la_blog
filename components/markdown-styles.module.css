@@ -20,3 +20,18 @@
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
 }
+
+.markdown code {
+  color: #d7d4f0;
+  background-color: #292a2b;
+  overflow: auto;
+  padding: 0rem 0.5rem 0.15rem 0.5rem;
+}
+.markdown pre {
+  padding: 1rem;
+  color: #d7d4f0;
+  background-color: #292a2b;
+}
+.markdown pre code {
+  display: block;
+}

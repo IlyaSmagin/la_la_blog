@@ -23,7 +23,7 @@ export default function Post({ post }) {
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article className="mb-32 grid grid-cols-1 sm:grid-cols-2">
+            <article className="mb-32 grid grid-cols-1 gap-x-6 sm:grid-cols-5">
               <Head>
                 <title>{post.title} | Ла_ла_блог</title>
                 <meta

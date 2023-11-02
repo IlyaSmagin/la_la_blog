@@ -4,7 +4,7 @@ import PostTitle from '../components/post-title'
 
 export default function PostHeader({ title, date, author }) {
   return (
-    <div className='h-full font-light'>
+    <div className='h-full font-light col-span-2'>
         <div className="mb-2 font-mono text-md">
           <DateFormatter dateString={date} />
         </div>
