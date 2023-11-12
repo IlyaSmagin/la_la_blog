@@ -30,12 +30,8 @@
 }
 
 .markdown blockquote {
-  @apply border-l-2 border-black pl-4
+  @apply border-l-2 border-black pl-4 dark:border-white;
 }
-.markdown blockquote {
-  @apply dark:border-white;
-}
-
 .markdown code {
   color: #d7d4f0;
   background-color: #292a2b;
@@ -49,4 +45,8 @@
 }
 .markdown pre code {
   display: block;
+}
+.markdown ol, .markdown ul {
+  margin-left: 2rem;
+  list-style: inside;
 }
